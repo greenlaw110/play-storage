@@ -1,0 +1,5 @@
+<ul>
+#{list items:list, as: 'pic'}
+    <li><a href='@{get(pic.id)}'><img src='@{getThumbnail(pic.id)}'/></a></li>
+#{/list}
+</ul>

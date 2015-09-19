@@ -1,0 +1,5 @@
+# History
+# 1.0 - Initial version
+self: play -> storage 1.0
+require:
+    - play 1.2

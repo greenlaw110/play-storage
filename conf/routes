@@ -1,0 +1,17 @@
+# This file defines all module routes (Higher priority routes first)
+#
+# import these routes in the main app as :
+# *     /                       module:storage
+#
+# ~~~~
+
+GET /css/    staticDir:public/css
+GET /js/    staticDir:public/js
+GET /img/   staticDir:public/img
+GET /public/    staticDir:public
+
+GET /pictures/orphans storage.Pictures.listOrphans
+GET /pictures/{id} storage.Pictures.get
+GET /pictures/{id}/thumbnail storage.Pictures.getThumbnail
+
+GET     /?                      Module.index
